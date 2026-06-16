@@ -6,8 +6,8 @@ with open("colours2.json","r") as colours:
 #To take the input from  the user of the two colours that he wants to mix!
 
 while True :  
-    user_c1 = input("Enter the name of the first colour(eg:red(or)green):").strip().lower()
-    user_c2 = input("Enter the name of the second colour(eg:orange(or)blue):").strip().lower()
+    user_c1 = input("Enter the name of the first colour(eg:red(or)green______):").strip().lower()
+    user_c2 = input("Enter the name of the second colour(eg:orange(or)blue____):").strip().lower()
     if user_c1 in loaded_colours and user_c2 in loaded_colours :
         c1 = loaded_colours.get(user_c1)
         c2 = loaded_colours.get(user_c2)
@@ -16,7 +16,7 @@ while True :
         print("please enter the name of the colour withount any typo !")
     
 
-    #doing the average of the colour values
+#doing the average of the colour values
 
 average_list = []    
 
@@ -25,7 +25,7 @@ for x,y in zip(c1,c2):
     average_list.append(average)
 dict_differences={}
 smallest_difference=9999
-
+#to check the colour matched to the average value 
 for key,value in loaded_colours.items():
     difference_list=[]
     for y,z in zip(average_list,value):
