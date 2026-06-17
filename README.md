@@ -1,4 +1,4 @@
-# Project RGB 🎨
+# Project RBG 🎨
 
 A sleek, interactive command-line application built in Python that allows users to mix digital colors using RGB values. The program dynamically calculates the exact mathematical average of two chosen colors and finds the closest matching color block stored inside an external JSON database.
 
